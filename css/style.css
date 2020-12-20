@@ -1,1 +1,214 @@
-/* Denna fil skall innehålla din CSS kod */
+body{
+height: 100%;
+
+background: url("/food/img/kock.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+overflow: auto;
+
+}
+
+#wrapper{
+display: grid;
+
+height: 100vh;
+width: 100vw;
+
+
+
+grid-template-areas: 
+'he he ha ha ha ha'
+'a1 a1 a1 a1 a1 a1'
+'a1 a1 a1 a1 a1 a1'
+'a2 a2 a3 a3 a4 a4'
+'a2 a2 a3 a3 a4 a4'
+'fo fo fo fo fo fo';
+
+grid-gap: 10px;
+}
+
+
+.header{
+grid-area: he;
+}
+
+.headarticle{
+grid-area: ha;
+}
+
+.article1{
+grid-area: a1;
+}
+
+
+.article2{
+grid-area: a2;
+background-color: #e6d47de1;
+font-size: 50px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+width: 32vw;
+}
+
+
+.article3{
+grid-area: a3;
+background-color: #e6d47de1;
+font-size: 50px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+width: 32vw;
+}
+
+ 
+.article4{
+grid-area: a4;
+background-color: #e6d47de1;
+font-size: 50px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+width: 32vw;
+}
+
+
+.logga{
+width: 200px;
+height: 180px;
+
+margin-top: 15px;
+margin-left: 45px;
+}
+
+.link{
+text-decoration: none;
+color: black;
+}
+
+footer{
+grid-area: fo;
+color: white;
+
+display: flex;
+
+justify-content: center;
+align-items: flex-end;
+}
+
+
+#menywrapper{
+display: grid;
+
+ height: 100vh;
+ width: 100vw;
+
+ 
+
+ grid-template-areas: 
+ 'he he ha ha ha ha'
+ "ma ma ma ma ma ma"
+ "ma ma ma ma ma ma"
+ "ma ma ma ma ma ma"
+ "ma ma ma ma ma ma"
+ ;
+
+
+}
+
+.menyarticle{
+grid-area: ma;
+
+display:flex;
+
+justify-self: center;
+align-self: flex-end;
+
+justify-content: flex-start;
+
+height: 85vh;
+width: 80vw;
+
+background-color: #e6d47de1;
+}
+
+
+
+#omwrapper{
+    display: grid;
+    
+     height: 100vh;
+     width: 100vw;
+    
+     
+    
+     grid-template-areas: 
+     'he he ha ha ha ha'
+     "oa oa oa oa oa oa"
+     "oa oa oa oa oa oa"
+     "oa oa oa oa oa oa"
+     "oa oa oa oa oa oa"
+     ;
+    
+    
+    }
+    
+    .omarticle{
+    grid-area: oa;
+    
+    display:flex;
+    
+    justify-self: center;
+    align-self: flex-end;
+    
+    justify-content: center;
+    
+    
+    height: 85vh;
+    width: 80vw;
+    
+    background-color: #e6d47de1;
+    }
+
+
+ #kontaktwrapper{
+        display: grid;
+        
+         height: 100vh;
+         width: 100vw;
+        
+         
+        
+         grid-template-areas: 
+         'he he ha ha ha ha'
+         "ka ka ka ka ka ka"
+         "ka ka ka ka ka ka"
+         "ka ka ka ka ka ka"
+         "ka ka ka ka ka ka"
+         ;
+        
+        
+        }
+        
+        .kontaktarticle{
+        grid-area: ka;
+        
+        display:flex;
+        
+        justify-self: center;
+        align-self: flex-end;
+        
+        justify-content: center;
+        
+        height: 85vh;
+        width: 80vw;
+        
+        background-color: #e6d47de1
+       }
